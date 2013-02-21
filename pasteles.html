@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="grid.css">
+      <script src="jquery.js"></script>
+      <script src="grid.js"></script>
+      <script>
+         $(function() {
+            $(".grid").loadGrid();
+         });   
+      </script>
+   </head>
+   <body>
+      <table class="grid featuresSmall" title="Default Grid" action="ajax.php">
+         <tr>
+            <th col="feature">Feature</th>
+            <th col="version">Version</th>
+         </tr>
+      </table>
+   </body>
+</html>

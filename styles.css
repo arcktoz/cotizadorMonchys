@@ -1,0 +1,26 @@
+﻿			html	{
+				margin: 0;
+			}
+			body	{
+				margin: auto;
+				background-color: #abcabc;
+			}
+			h1	{
+				text-align: center;
+				background: #eeeeee url(../dibujos/miemoticon.gif) no-repeat 1% 50%;
+				color: blue;
+				margin: 0;
+				height: 50px;
+			}
+			p	{
+				margin: 0;
+				text-align: justify;
+				text-indent: 1cm;
+			}
+			#intro	{
+				margin: .5cm;
+				padding: .5cm;
+				background-color: #defdef;
+				color: black;
+			}
+		

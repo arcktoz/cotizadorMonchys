@@ -1,0 +1,51 @@
+function geolocalizar()
+		{
+			navigator.geolocation.getCurrentPosition(
+				mostrarMapa,
+				errorMapa
+		);
+		}
+		function mostrarMapa(datos)
+		{
+			var lat = datos.coords.latitude;
+			var lon = datos.coords.longitude;
+			$("#status").text("Te encontrÃ© en: " + lat + ","
+				+ lon);
+			$("#mapa_canvas").css("height", "300px");
+			$("#mapa_canvas").css("width", "300px");
+			var coordenada = new google.maps.LatLng(lat,lon);
+			var opciones = {
+				zoom: 16,
+				center:coordenada,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var mapa = new google.maps.Map(document.getElementById("mapa_canvas"),opciones);
+			var opcionesTachuela = {
+				position: coordenada,
+				map: mapa,
+				title: "Tu ubicacion actual"
+			};
+			var tachuela = new google.maps.Marker(opcionesTachuela);
+
+			var mkr = new google.maps.Market({
+				draggable: true,
+				position: coordenada,
+				map: map,
+				title: 'aqui',
+		});
+
+		}
+		function errorMapa(errorsh)
+		{
+			$("#status").text("Tarde o temprano Â¬_Â¬");
+		}
+		$(document).ready(
+			function()
+			{
+				geolocalizar();
+				if(!("autofocus" in document.createElement("input")))
+				{
+					$("#mapa").focus();
+				}
+			}
+		);

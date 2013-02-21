@@ -1,4 +1,4 @@
-cotizadorMonchys
-================
+cotizador-monchys
+=================
 
-Versión anterior del cotizador de pasteles especiales monchys
+Cotizador de pasteles especiales

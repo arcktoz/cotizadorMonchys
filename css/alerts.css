@@ -1,0 +1,28 @@
+﻿	html, body
+	{
+		height: 100%;
+	}
+
+	body
+	{
+		font: 12px 'Lucida Sans Unicode', 'Trebuchet MS', Arial, Helvetica;    
+		margin: 0;
+		/* DEGRADADO EN CAFE
+		background-color: #7b2800;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#c94200), to(#7b2800));
+		background-image: -webkit-linear-gradient(top, #c94200, #7b28002);
+		background-image: -moz-linear-gradient(top, #c94200, #7b2800);
+		background-image: -ms-linear-gradient(top, #c94200, #7b2800);
+		background-image: -o-linear-gradient(top, #c942002, #7b2800);
+		background-image: linear-gradient(top, #c94200, #7b2800);    
+		*/
+
+		/*DEGRADADO EN VERDE*/	
+		background-color: #a6ce39;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#deedb6), to(#a6ce39));
+		background-image: -webkit-linear-gradient(top, #deedb6, #a6ce39);
+		background-image: -moz-linear-gradient(top, #deedb6, #a6ce39);
+		background-image: -ms-linear-gradient(top, #deedb6, #a6ce39);
+		background-image: -o-linear-gradient(top, #deedb6, #a6ce39);
+		background-image: linear-gradient(top, #deedb6, #a6ce39); 
+	}
